@@ -25,7 +25,8 @@
 .eye {
     height: 20px;
     width: 20px;
-    background-color: black;
+    background-color: white;
+    border: 1px solid black;
     border-radius: 50%;
 }
 
@@ -37,6 +38,16 @@
 .right-eye {
     position: absolute;
     right: 20%;
+}
+
+.pupil {
+    width: 50%;
+    height: 75%;
+    position: absolute;
+    border-radius: 50%;
+    top: 12.5%;
+    left: 25%;
+    background-color: black;
 }
 
 .mouth {
