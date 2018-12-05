@@ -6,4 +6,26 @@
     display: inline-block;
     position: absolute;
     border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.face {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.mouth {
+    height: 25%;
+    width: 50%;
+    background-color: white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    left: 25%;
+    bottom: 10%;
 }
