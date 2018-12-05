@@ -11,9 +11,15 @@ $eye-ball-colour: #FFFFFF;
 $eye-ball-width: $face-width * 0.15;
 $eye-ball-height: $face-height * 0.25;
 $eye-ball-radius: 50%;
-$eye-ball-place: 20%;
+$eye-ball-horizontal-place: 20%;
 
 $eye-iris-colour: #00CCCC;
+$eye-iris-width: $eye-ball-width * 0.5;
+$eye-iris-height: $eye-ball-height * 0.5;
+$eye-iris-radius: 50%;
+$eye-iris-horizontal-place: ($eye-ball-width / 2) - ($eye-iris-width / 2) - $border-secondary-width;
+$eye-iris-vertical-place: ($eye-ball-height / 2) - ($eye-iris-height / 2) - $border-secondary-width;
+
 $eye-pupil-colour: #FFFFFF;
 
 
@@ -47,10 +53,21 @@ $tongue-colour: #FF5A5A;
 
 .left-eye {
     position: absolute;
-    left: $eye-ball-place;
+    left: $eye-ball-horizontal-place;
 }
 
 .right-eye {
     position: absolute;
-    right: $eye-ball-place;
+    right: $eye-ball-horizontal-place;
+}
+
+.eye-iris {
+    position: absolute;
+    left: $eye-iris-horizontal-place;
+    top: $eye-iris-vertical-place;
+    background-color: $eye-iris-colour;
+    border: $border-secondary-width solid $border-colour;
+    border-radius: $eye-ball-radius;
+    width: $eye-iris-width;
+    height: $eye-iris-height;
 }
