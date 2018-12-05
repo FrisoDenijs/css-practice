@@ -55,8 +55,10 @@
     left: 2px;
     top: 8px;
     position: absolute;
+    border-radius: 50%;
     border-bottom: 7.5px solid white;
-    border-left: 2.5px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
     transform: rotate(20deg);
 }
 

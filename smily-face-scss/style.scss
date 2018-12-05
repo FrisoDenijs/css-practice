@@ -1,0 +1,23 @@
+$border-colour: #000000;
+$border-primary-width: 5px;
+
+$face-colour: #FFFF00;
+$face-width: 500px;
+$face-height: 500px;
+$face-border-radius: 50%;
+
+$eye-ball-colour: #FFFFFF;
+$eye-iris-colour: #00CCCC;
+$eye-pupil-colour: #FFFFFF;
+$teeth-colour: #FEFEFF;
+$tongue-colour: #FF5A5A;
+
+
+
+.face {
+    background-color: $face-colour;
+    border: $border-primary-width solid $border-colour;
+    width: $face-width;
+    height: $face-height;
+    border-radius: $face-border-radius;
+}
